@@ -1,17 +1,8 @@
-
 local lsp = require("lspconfig")
 local util = require("lspconfig/util")
 
 lsp.gopls.setup {
-    cmd = { "gopls", "" },
+    cmd = { "gopls", "serve" },
     filetypes = { "go", "gomod" },
     root_dir = util.root_pattern("go.mod", ".git"),
-    settings = {
-        gopls = {
-            analyses = {
-                unusedparams = true,
-            },
-            staticcheck = true,
-        }
-    }
 }
