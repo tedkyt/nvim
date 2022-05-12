@@ -11,9 +11,6 @@ require("nvim-tree-config")
 -- LSP
 require("lsp")
 
--- Tagbar
-require("tagbar-config")
-
 -- Tabline
 require("barbar")
 

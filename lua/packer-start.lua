@@ -24,9 +24,6 @@ return require("packer").startup(function(use)
     -- LSP
     use "neovim/nvim-lspconfig"
 
-    -- Tagbar
-    use "preservim/tagbar"
-
     -- Indent guide
     use "lukas-reineke/indent-blankline.nvim"
 
