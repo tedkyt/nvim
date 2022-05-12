@@ -1,8 +1,12 @@
-local lsp = require("lspconfig")
+local configs = require("lspconfig/configs")
 local util = require("lspconfig/util")
 
-lsp.gopls.setup {
-    cmd = { "gopls", "serve" },
-    filetypes = { "go", "gomod" },
-    root_dir = util.root_pattern("go.mod", ".git"),
+configs.gopls = {
+    default_config = {
+        cmd = { "gopls" },
+        filetypes = { "go", "gomod" },
+        root_dir = util.root_pattern("go.mod", ".git")
+    }
 }
+
+require("lspconfig").gopls.setup{}
