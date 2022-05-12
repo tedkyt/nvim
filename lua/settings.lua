@@ -33,3 +33,5 @@ map("n", "<leader>t", ":ToggleTerm size=15 dir=~/Projects direction=horizontal<C
 
 -- Auto exit if NvimTree is the last one in buffer
 cmd("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
+
+vim.api.nvim_set_current_dir("~/.config/nvim")
