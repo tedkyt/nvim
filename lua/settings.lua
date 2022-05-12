@@ -1,5 +1,6 @@
 local cmd = vim.api.nvim_command
 local g = vim.g
+local opt = vim.opt
 local map = vim.api.nvim_set_keymap
 
 cmd([[
