@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/home/ted/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
+  ["completion-nvim"] = {
+    loaded = true,
+    path = "/home/ted/.local/share/nvim/site/pack/packer/start/completion-nvim",
+    url = "https://github.com/nvim-lua/completion-nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/ted/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",

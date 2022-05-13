@@ -1,16 +1,25 @@
-local lsp = require("lspconfig")
-local util = require("lspconfig/util")
+local nvim_lsp = require("lspconfig")
 
-local custom_attach = function(client, bufnr)
-    client.config.root_dir = vim.fn.getcwd()
-    vim.api.nvim_set_current_dir(client.config.root_dir)
+local on_attach = function(client)
+    require("completion").on_attach(client)
 end
 
-lsp.gopls.setup {
-    default_config = {
-        cmd = { "gopls" },
-        filetypes = { "go", "gomod", "gotmpl" },
-        root_dir = util.root_pattern("go.mod", ".git"),
-        on_attach = custom_attach
+nvim_lsp.rust_analyzer.setup({
+    on_attach = on_attach,
+    settings = {
+        ["rust-analyzer"] = {
+            assist = {
+                importGranularity = "module",
+                importPrefix = "self",
+            },
+            cargo = {
+                loadOutDirsFromCheck = true
+            },
+            procMacro = {
+                enable = true
+            },
+        }
     }
-}
+})
+
+vim.cmd([[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]])

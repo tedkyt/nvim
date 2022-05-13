@@ -24,6 +24,9 @@ return require("packer").startup(function(use)
     -- LSP
     use "neovim/nvim-lspconfig"
 
+    -- Auto completion
+    use "nvim-lua/completion-nvim"
+
     -- Indent guide
     use "lukas-reineke/indent-blankline.nvim"
 

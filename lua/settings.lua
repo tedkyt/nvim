@@ -28,10 +28,9 @@ cmd([[
 ]])
 
 g.mapleader = ";"
+map("i", "##", "<Esc>", { noremap = true, silent = true })
 map("n", "<leader>r", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
 map("n", "<leader>t", ":ToggleTerm size=15 dir=~/Projects direction=horizontal<CR>", { noremap = true, silent = true })
 
 -- Auto exit if NvimTree is the last one in buffer
 cmd("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
-
-vim.api.nvim_set_current_dir("~/.config/nvim")
