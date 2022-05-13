@@ -5,19 +5,8 @@ local cmd = vim.api.nvim_command
 require("settings")
 require("packer-start")
 
--- File explorer
-require("nvim-tree-config")
-
--- LSP
-require("lsp")
-
--- Tabline
-require("barbar")
-
--- Status line
-require("lualine").setup{
-    options = { theme = "material" },
-}
+-- Theme
+cmd("colorscheme nord")
 
 -- Indent guide
 opt.list = true
@@ -26,8 +15,22 @@ require("indent_blankline").setup {
     space_char_blankline = " ",
 }
 
+-- LSP
+require("lsp")
+
+-- Status line
+require("lualine").setup{
+    options = { theme = "material" },
+}
+
+-- Tabline
+require("barbar")
+
+-- File explorer
+require("nvim-tree-config")
+
+-- Tagbar
+require("tagbar-config")
+
 -- Terminal
 require("toggleterm").setup{}
-
--- Theme
-cmd("colorscheme nord")

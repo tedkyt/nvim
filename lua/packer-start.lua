@@ -1,13 +1,17 @@
 return require("packer").startup(function(use)
     use "wbthomason/packer.nvim"
 
-    -- File explorer
-    use {
-        "kyazdani42/nvim-tree.lua",
-        requires = {
-            "kyazdani42/nvim-web-devicons",
-        },
-    }
+    -- Theme
+    use "arcticicestudio/nord-vim"
+
+    -- Indent guide
+    use "lukas-reineke/indent-blankline.nvim"
+
+    -- LSP
+    use "neovim/nvim-lspconfig"
+
+    -- Auto completion
+    use "nvim-lua/completion-nvim"
 
     -- Status line
     use {
@@ -21,14 +25,16 @@ return require("packer").startup(function(use)
         requires = { "kyazdani42/nvim-web-devicons" }
     }
 
-    -- LSP
-    use "neovim/nvim-lspconfig"
+    -- File explorer
+    use {
+        "kyazdani42/nvim-tree.lua",
+        requires = {
+            "kyazdani42/nvim-web-devicons",
+        },
+    }
 
-    -- Auto completion
-    use "nvim-lua/completion-nvim"
-
-    -- Indent guide
-    use "lukas-reineke/indent-blankline.nvim"
+    -- Tagbar
+    use "preservim/tagbar"
 
     -- Terminal
     use {
@@ -38,7 +44,4 @@ return require("packer").startup(function(use)
             require("toggleterm").setup()
         end
     }
-
-    -- Theme
-    use "arcticicestudio/nord-vim"
 end)

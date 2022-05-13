@@ -28,6 +28,7 @@ cmd([[
 ]])
 
 g.mapleader = ";"
+map("n", "<leader>b", ":TagbarToggle<CR>", { noremap = true, silent = true })
 map("n", "<leader>r", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
 map("n", "<leader>t", ":ToggleTerm size=15 dir=~/Projects direction=horizontal<CR>", { noremap = true, silent = true })
 
