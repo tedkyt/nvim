@@ -22,4 +22,4 @@ nvim_lsp.rust_analyzer.setup({
     }
 })
 
-vim.cmd([[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]])
+vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync(nil, 1000)]])
