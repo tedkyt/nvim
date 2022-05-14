@@ -28,9 +28,9 @@ cmd([[
 ]])
 
 g.mapleader = ";"
-map("n", "<leader>b", ":TagbarToggle<CR>", { noremap = true, silent = true })
-map("n", "<leader>r", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
-map("n", "<leader>t", ":ToggleTerm size=15 dir=~/Projects direction=horizontal<CR>", { noremap = true, silent = true })
+map("n", "<leader>l", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
+map("n", "<leader>m", ":ToggleTerm size=15 dir=~/Projects direction=horizontal<CR>", { noremap = true, silent = true })
+map("n", "<leader>n", ":TagbarToggle<CR>", { noremap = true, silent = true })
 
 -- Auto exit if NvimTree is the last one in buffer
 cmd("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")

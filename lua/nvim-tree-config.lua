@@ -1,6 +1,4 @@
 local nvimtree = require("nvim-tree")
-local nvim_version = vim.version()
-local version_no = nvim_version.major .. "." .. nvim_version.minor .. "." .. nvim_version.patch
 
 nvimtree.setup{
     auto_reload_on_write = true,
@@ -115,18 +113,3 @@ nvimtree.setup{
         },
     },
 }
-
--- Attach event for tagline
-local nvim_tree_events = require('nvim-tree.events')
-local bufferline_state = require('bufferline.state')
-
-nvim_tree_events.on_tree_open(function ()
-    bufferline_state.set_offset(40, "Neovim " .. version_no)
-end)
-
-nvim_tree_events.on_tree_close(function ()
-    bufferline_state.set_offset(0)
-end)
-
--- Startup action
-nvimtree.toggle()

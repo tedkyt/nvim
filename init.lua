@@ -34,3 +34,9 @@ require("tagbar-config")
 
 -- Terminal
 require("toggleterm").setup{}
+
+-- Attach events
+require("attach-events")
+
+-- Start up actions
+require("startup")
