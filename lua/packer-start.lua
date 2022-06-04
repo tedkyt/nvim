@@ -2,7 +2,7 @@ return require("packer").startup(function(use)
     use "wbthomason/packer.nvim"
 
     -- Theme
-    use "arcticicestudio/nord-vim"
+    use "EdenEast/nightfox.nvim"
 
     -- Indent guide
     use "lukas-reineke/indent-blankline.nvim"

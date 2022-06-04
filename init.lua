@@ -6,7 +6,7 @@ require("settings")
 require("packer-start")
 
 -- Theme
-cmd("colorscheme nord")
+cmd("colorscheme nordfox")
 
 -- Indent guide
 opt.list = true
