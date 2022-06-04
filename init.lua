@@ -18,6 +18,9 @@ require("indent_blankline").setup {
 -- LSP
 require("lsp")
 
+-- Auto tags
+require("nvim-autopairs").setup{}
+
 -- Status line
 require("lualine").setup{
     options = { theme = "material" },

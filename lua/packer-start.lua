@@ -13,6 +13,9 @@ return require("packer").startup(function(use)
     -- Auto completion
     use "nvim-lua/completion-nvim"
 
+    -- Auto tags
+    use "windwp/nvim-autopairs"
+
     -- Status line
     use {
         "nvim-lualine/lualine.nvim",
