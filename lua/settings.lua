@@ -28,6 +28,7 @@ cmd([[
 ]])
 
 g.mapleader = ";"
+map("v", "<leader>l", "<Esc>", { noremap = true, silent = true })
 map("i", "<leader>l", "<Esc>", { noremap = true, silent = true })
 
 map("n", "<leader>t", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
