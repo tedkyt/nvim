@@ -18,6 +18,17 @@ require("indent_blankline").setup {
 -- LSP
 require("lsp")
 
+-- Treesitter
+require("nvim-treesitter.configs").setup {
+    ensure_installed = "all",
+    highlight = {
+        enable = true,
+    },
+}
+
+-- Golang specific
+require("go").setup{}
+
 -- Auto tags
 require("nvim-autopairs").setup{}
 

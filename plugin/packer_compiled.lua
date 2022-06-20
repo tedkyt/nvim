@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/rtedkyt/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["go.nvim"] = {
+    loaded = true,
+    path = "/home/rtedkyt/.local/share/nvim/site/pack/packer/start/go.nvim",
+    url = "https://github.com/ray-x/go.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/rtedkyt/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",

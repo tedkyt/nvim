@@ -28,8 +28,8 @@ cmd([[
 ]])
 
 g.mapleader = ";"
-map("v", "<leader>l", "<Esc>", { noremap = true, silent = true })
-map("i", "<leader>l", "<Esc>", { noremap = true, silent = true })
+map("v", "<leader>;", "<Esc>", { noremap = true, silent = true })
+map("i", "<leader>;", "<Esc>", { noremap = true, silent = true })
 
 map("n", "<leader>t", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
 map("n", "<leader>.", ":ToggleTerm size=15 dir=~/Projects direction=horizontal<CR>", { noremap = true, silent = true })

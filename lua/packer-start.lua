@@ -10,6 +10,12 @@ return require("packer").startup(function(use)
     -- LSP
     use "neovim/nvim-lspconfig"
 
+    -- Treesitter
+    use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
+
+    -- Golang specific
+    use "ray-x/go.nvim"
+
     -- Auto completion
     use "hrsh7th/cmp-nvim-lsp"
     use "hrsh7th/cmp-buffer"
