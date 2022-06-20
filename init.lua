@@ -26,9 +26,6 @@ require("nvim-treesitter.configs").setup {
     },
 }
 
--- Golang specific
-require("go").setup{}
-
 -- Auto tags
 require("nvim-autopairs").setup{}
 

@@ -73,16 +73,14 @@ nvim_lsp.rust_analyzer.setup({
     }
 })
 
-nvim_lsp.gopls.setup {
+nvim_lsp.gopls.setup{
+    capabilities = capabilities,
     settings = {
-        cmd = { "gopls", "serve" },
-        filetypes = { "go", "gomod", "gotmpl" },
-        root_dir = function(fname)
-            return util.root_pattern("go.work")(fname) or util.root_pattern("go.mod", ".git")(fname)
-        end,
-        single_file_support = true,
-    }
+        cmd = { "gopls" },
+    },
 }
 
+-- ================================================== --
+
 vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync(nil, 1000)]])
-vim.cmd([[autocmd BufWritePre *.go :silent! lua require('go.format').gofmt()]])
+vim.cmd([[autocmd BufWritePost *.go :silent !gofmt -w %]])
