@@ -73,12 +73,9 @@ nvim_lsp.rust_analyzer.setup({
     }
 })
 
-nvim_lsp.gopls.setup{
+nvim_lsp.gopls.setup({
     capabilities = capabilities,
-    settings = {
-        cmd = { "gopls" },
-    },
-}
+})
 
 -- ================================================== --
 
