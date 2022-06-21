@@ -74,7 +74,17 @@ nvim_lsp.rust_analyzer.setup({
 })
 
 nvim_lsp.gopls.setup({
-    capabilities = capabilities,
+    cmd = { "gopls", "serve" },
+    filetypes = { "go", "gomod" },
+    root_dir = lsp_util.root_pattern("go.work", "go.mod", ".git"),
+    settings = {
+        gopls = {
+            analyses = {
+                unusedparams = true,
+            },
+            staticcheck = true,
+        },
+    },
 })
 
 -- ================================================== --

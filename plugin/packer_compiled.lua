@@ -155,6 +155,11 @@ _G.packer_plugins = {
     path = "/home/rtedkyt/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
   },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/home/rtedkyt/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
+  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/rtedkyt/.local/share/nvim/site/pack/packer/start/vim-vsnip",
