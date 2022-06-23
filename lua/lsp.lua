@@ -90,4 +90,4 @@ nvim_lsp.gopls.setup({
 -- ================================================== --
 
 vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.formatting_sync(nil, 1000)]])
-vim.cmd([[autocmd BufWritePost *.go :silent !gofmt -w %]])
+vim.cmd([[autocmd BufWritePost *.go :silent !gofumpt -w %]])
