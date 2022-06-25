@@ -32,7 +32,7 @@ g.mapleader = ";"
 map("i", "<leader>;", "<Esc>", { noremap = true, silent = true })
 map("x", "<leader>;", "<Esc>", { noremap = true, silent = true })
 
-map("n", "<leader>l", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
+map("n", "<leader>;", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
 map("n", "<leader>.", ":ToggleTerm size=15 dir=~/Projects direction=horizontal<CR>", { noremap = true, silent = true })
 map("n", "<leader>,", ":TagbarToggle<CR>", { noremap = true, silent = true })
 map("t", "<leader>.", "<C-\\><C-n> :ToggleTerm<CR>", { noremap = true, silent = true })
