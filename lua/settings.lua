@@ -35,8 +35,11 @@ map("x", "<leader>;", "<Esc>", { noremap = true, silent = true })
 map("n", "<leader>l", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
 map("n", "<leader>.", ":ToggleTerm size=15 dir=~/Projects direction=horizontal<CR>", { noremap = true, silent = true })
 map("n", "<leader>,", ":TagbarToggle<CR>", { noremap = true, silent = true })
+map("t", "<leader>.", "<C-\\><C-n> :ToggleTerm<CR>", { noremap = true, silent = true })
 
 map("n", "<space>e", ":lua vim.diagnostic.open_float()<CR>", { noremap = true, silent = true })
+
+map("t", "<leader>;", "cd ~/.config/nvim<CR>", { noremap = true, silent = true })
 
 -- Auto exit if NvimTree is the last one in buffer
 cmd("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
