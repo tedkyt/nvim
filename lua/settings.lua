@@ -25,6 +25,7 @@ cmd([[
     set cursorline
     set ttyfast
     set termguicolors
+    set shada="NONE"
 ]])
 
 g.mapleader = ";"
