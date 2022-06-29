@@ -30,9 +30,6 @@ cmd([[
 
 g.mapleader = ";"
 
-map("i", "<leader>;", "<Esc>", { noremap = true, silent = true })
-map("x", "<leader>;", "<Esc>", { noremap = true, silent = true })
-
 map("n", "<leader>l", ":lua vim.diagnostic.open_float()<CR>", { noremap = true, silent = true })
 map("n", "<leader>;", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
 map("n", "<leader>.", ":ToggleTerm size=15 dir=~/Projects direction=horizontal<CR>", { noremap = true, silent = true })
