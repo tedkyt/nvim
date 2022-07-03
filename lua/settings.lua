@@ -30,12 +30,12 @@ cmd([[
 
 g.mapleader = ";"
 
-map("n", "<leader>l", ":lua vim.diagnostic.open_float()<CR>", { noremap = true, silent = true })
-map("n", "<leader>;", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
+map("n", "<leader><space>", ":lua vim.diagnostic.open_float()<CR>", { noremap = true, silent = true })
+map("n", "<leader>;", ":NvimTreeFocus<CR>", { noremap = true, silent = true })
+map("n", "<leader>l", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
 map("n", "<leader>.", ":ToggleTerm size=15 dir=~/Projects direction=horizontal<CR>", { noremap = true, silent = true })
 map("n", "<leader>,", ":TagbarToggle<CR>", { noremap = true, silent = true })
-map("t", "<leader>.", "<C-\\><C-n><Esc><CR>:ToggleTerm<CR>", { noremap = true, silent = true })
-map("t", "<leader>,", "clear<CR>", { noremap = true, silent = true })
+map("t", "<leader>.", "<C-\\><C-n><CR><Esc>:ToggleTerm<CR>", { noremap = true, silent = true })
 
 -- Auto exit if NvimTree is the last one in buffer
 cmd("autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif")
