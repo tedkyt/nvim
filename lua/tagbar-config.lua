@@ -1,9 +1,9 @@
 vim.cmd([[let g:rust_use_custom_ctags_defs = 1]])
 
-vim.cmd([[let g:tagbar_ctags_bin = '~/.local/share/universal-ctags/bin/ctags']])
+vim.cmd([[let g:tagbar_ctags_bin = '~/.config/ctags/bin/ctags']])
 
 vim.cmd([[let g:tagbar_type_rust = {
-  \ 'ctagsbin' : '~/.local/share/universal-ctags/bin/ctags',
+  \ 'ctagsbin' : '~/.config/ctags/bin/ctags',
   \ 'ctagstype' : 'rust',
   \ 'kinds' : [
       \ 'n:modules',

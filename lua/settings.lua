@@ -33,7 +33,7 @@ g.mapleader = ";"
 map("n", "<leader><space>", ":lua vim.diagnostic.open_float()<CR>", { noremap = true, silent = true })
 map("n", "<leader>;", ":NvimTreeFocus<CR>", { noremap = true, silent = true })
 map("n", "<leader>l", ":NvimTreeRefresh<CR>", { noremap = true, silent = true })
-map("n", "<leader>.", ":ToggleTerm size=15 dir=~/Projects direction=horizontal<CR>", { noremap = true, silent = true })
+map("n", "<leader>.", ":ToggleTerm size=15 dir=~/projects direction=horizontal<CR>", { noremap = true, silent = true })
 map("n", "<leader>,", ":TagbarToggle<CR>", { noremap = true, silent = true })
 map("t", "<leader>.", "<C-\\><C-n><CR><Esc>:ToggleTerm<CR>", { noremap = true, silent = true })
 
